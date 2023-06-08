@@ -1,0 +1,71 @@
+
+<main class="ontainer" style="background-color: cornsilk;">
+  <%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+    
+<h2 style="text-align: center;color:darkseagreen;">Welcome to <%= title %> Page</h2>
+      <div style="box-sizing: border-box;margin-left: auto;
+      margin-right: auto;
+      width: 980px;
+      background-color:antiquewhite;
+      background:linear-gradient();
+      border: 2px solid #6B6B00;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px #666666;
+      padding: 6px; ">
+            <h5>Contact Information:</h5>
+            <h5>Email: xliu245mycentennialcollege.ca</h5>
+            <h5>Phone: 416-456-7890</h5>
+            <!-- Add any other contact information you want to display -->
+          <hr>
+            <h2>Contact Form</h2>
+            <form action="/submit-contact" method="POST">
+              <p>*Required fields are marked with an Asterisk</p>
+              <label style="vertical-align: top;
+              text-align: right;"   for="firstName">*First Name</label>
+              <input style="background-color: antiquewhite;" type="text" id="firstName" name="firstName" size="76px" required>
+          <br>
+          <br>
+              <label style="vertical-align: top;
+              text-align: right;" for="lastName">*Last Name</label>
+              <input style="background-color: antiquewhite;" type="text" id="lastName" name="lastName" size="76px" required>
+          <br>
+          <br>
+              <label style="vertical-align: top;
+              text-align: right;" for="contactNumber">*Contact Number:</label>
+              <input style="background-color: antiquewhite;" type="tel" id="contactNumber" name="contactNumber" required><br>
+          <br>
+              <label style="vertical-align: top;
+              text-align: right;" for="email">*Email Address</label>
+              <input style="background-color: antiquewhite;" type="email" id="email" name="email" required><br>
+          <br>
+              <label style="vertical-align: top;
+              text-align: right;" for="message">Message</label>
+              <textarea id="message" name="message" style="background-color: antiquewhite;" required></textarea><br>
+          <br>
+          <br>
+          <br>
+          <br>
+              <button style="background-color: lightblue;
+              border-color: black;
+         color:black;
+           height: 35px;
+         width: 200px;
+           border-radius: 20px;" type="submit">Submit</button>
+            </form>
+      </div>
+</main>
+<%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+
+
+    <!--<img src="img/logo.png" alt="logo">-->
+
+
+
+
+      
+
+
+   
